@@ -1,0 +1,18 @@
+# robots.txt — 部署后把 flashcards.example.com 替换为真实域名
+User-agent: *
+Allow: /
+# 动态接口仅作前端数据源，不纳入索引，避免参数重复页稀释权重
+Disallow: /*?action=
+Disallow: /api.php$
+
+# AI 搜索引擎/问答抓取（GEO）：允许全站，llms.txt 在站点根目录
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://flashcards.example.com/sitemap.xml
