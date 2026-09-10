@@ -48,7 +48,7 @@
 ## 目录结构
 
 ```
-_plan_ai_img/
+RED-content-pipeline-mass-produces/
 ├── index.html              # 马卡龙风看板：作品墙/九页详情/一键复制文案/生产漏斗/源码
 ├── api.php                 # 只读 JSON API + 图片白名单代理（单文件）
 ├── collect_config.yaml     # 赛道/词族/LLM provider 与兜底模型（不含密钥）
