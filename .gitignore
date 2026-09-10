@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 日志
+*.log
+
+# 生成图片（80 张原图 + 180 张卡片约 800MB，跑 gen_images.py / compose_cards.py 重生成）
+data/images/
+
+# 竞品拆解调研笔记（第三方文章内容，不随公开仓库分发）
+b.md

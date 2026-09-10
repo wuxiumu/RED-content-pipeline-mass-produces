@@ -1,0 +1,105 @@
+# 收集智能体配置 · AI 蜡笔绘本 · 幼儿英语启蒙
+# 被 scripts/expand_keywords.py / scrape_xhs.py / judge.py 读取
+
+niche: "AI蜡笔绘本·幼儿英语启蒙"
+
+# LLM 配置(复用 ~/.openclaw/openclaw.json 的 provider,这里只指定用哪个)
+llm:
+  provider: "zhipu"
+  model_flash: "GLM-5.3-Flash"   # 扩词/台词/选题(批量、便宜)
+  model_pro: "GLM-5.3"           # 标题/正文(质量)
+  # 智谱对营销/小红书类 prompt 偶发空返回(内容策略),自动切百炼兜底
+  fallback_provider: "bailian-token-plan"
+  fallback_model: "qwen3.8-max"
+
+# 三轨种子词(仅用于市场研究;知名 IP 词只看竞品,绝不进自产内容)
+tracks:
+  wordcard:
+    seeds:
+      - "英语启蒙"
+      - "幼儿英语启蒙"
+      - "磨耳朵"
+      - "英语单词"
+      - "宝宝英语"
+      - "亲子英语"
+      - "英语启蒙这样做"
+      - "2岁英语"
+      - "3岁英语"
+      - "英语闪卡"
+      - "英文绘本"
+    expand_per_seed: 5
+  video:
+    seeds:
+      - "英语磨耳朵动画"
+      - "启蒙儿歌"
+      - "幼儿英语视频"
+      - "英语律动"
+      - "英文动画推荐"
+      - "sss儿歌"
+      - "宝宝学英语"
+      - "英语启蒙动画"
+    expand_per_seed: 5
+  resource:
+    seeds:
+      - "英语启蒙资料"
+      - "磨耳朵资源"
+      - "英语动画清单"
+      - "英文绘本资源"
+      - "启蒙资源包"
+      - "可打印素材"
+      - "英语闪卡打印"
+      - "安静书"
+    expand_per_seed: 5
+
+# 抓取配置
+scrape:
+  keywords_per_track: 7
+  samples_per_keyword: 15
+  competitor_accounts: 8
+
+# ===== 03 生产配置 =====
+production:
+  daily_limit: 1            # 养号期每天 1 词;跑顺后可提到 3-5
+  image:
+    size: "3:4"             # bl CLI 比例写法(也可像素 1024*1365)
+    per_word: 4             # 每词 4 张无文字原图
+    style_file: "assets/style/base_style.txt"
+    negative_file: "assets/style/negative.txt"
+  card:
+    width: 1080
+    height: 1440
+    margin: 80
+    font_en: "Arial Rounded Bold"
+    font_zh: "PingFang SC(缺失时自动回退 Hiragino Sans GB / STHeiti)"
+  post:
+    tags_pool:
+      - "英语启蒙"
+      - "幼儿英语启蒙"
+      - "磨耳朵"
+      - "亲子英语"
+      - "英语单词"
+      - "宝妈必备"
+      - "英语启蒙这样做"
+      - "育儿日常"
+    cta_template: "原创磨耳朵资源已整理好(自制动画+可打印闪卡),评论区扣【1】,看到都会回"
+    post_time_hint: "20:30-22:00"
+
+# 合规词表:命中即拦截(脚本里再用代码强制)
+compliance:
+  banned_terms:
+    - "微信"
+    - "加v"
+    - "vx"
+    - "v信"
+    - "二维码"
+    - "http"
+    - "www."
+    - "网盘"
+    - "盗版"
+    - "小猪佩奇"
+    - "奥特曼"
+    - "汪汪队"
+    - "哆啦A梦"
+    - "海绵宝宝"
+    - "宝宝巴士"
+  resource_claim: "原创磨耳朵动画+自制可打印闪卡,持续更新"

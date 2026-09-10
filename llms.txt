@@ -1,0 +1,19 @@
+# AI 蜡笔英语启蒙单词卡 · 小红书内容生产流水线 (xhs-ai-crayon-english-flashcards)
+
+> 面向 2-6 岁英语启蒙小红书账号的单词卡内容工厂。每个单词产出：4 句中英双语台词与分镜、IPA 音标、亲子互动话术、4 张 AI 原创蜡笔风原图（百炼 qwen-image，同词 md5 稳定 seed，3:4 无水印）、9 页 1080×1440 成品卡（Pillow：封面+4台词页+单词页+互动页+合集页+CTA页）、1 篇带 8 标签的发帖文案。六步流水线：expand_keywords → judge → build_scripts → gen_images → compose_cards → execute，JSON 文件状态机支持断点续跑。系统只产出本地物料，永不自动发帖；只用原创形象，第三方 IP 仅用于竞品研究。
+
+核心事实：
+- 语言/运行时：Python 3.9+、PHP 7.4+；依赖 pyyaml、requests、pillow、playwright；文生图用阿里云百炼 bl CLI，LLM 用智谱 GLM-5.3 系列并以百炼 qwen3.8-max 兜底空返回
+- 词库：assets/wordlists/word_families.yaml 含 10 词族 100 词，milk/bread/corn/cheese 标记 uncountable
+- 画风：assets/style/base_style.txt 固定蜡笔骨架（【SUBJECT】插槽）+ negative.txt 负面词；生图必须 --watermark false --prompt-extend false
+- 质量控制：execute 校验正文 4 句台词与卡面逐字一致，缺句重试；合集页进度只认真实存在的卡片文件；IPA 音标对缺失字符回退 Arial Unicode
+- 看板：index.html 马卡龙单页 + api.php 只读接口（stats/list/post/flow/scripts/script/image），支持一键复制发帖文案
+- 样板数据：data/produced.json 含 20 篇 ready 成品；80 张原图与 180 张卡片约 800MB 未入库，运行 gen_images.py 与 compose_cards.py 重生成
+
+- [README](README.md): 完整文档：九页卡结构、快速开始、API、工程细节、FAQ
+- [三智能体总览](00_总览.md): 业务定位与架构
+- [收集/判断/执行设计](01_收集智能体.md): 智能体职责文档（01-03）
+- [词族词表](assets/wordlists/word_families.yaml): 10 词族 100 单词声明
+- [画风骨架](assets/style/base_style.txt): 蜡笔画风 prompt 模板
+- [只读 API](api.php): 单文件 PHP 后端
+- [流水线脚本](scripts/): build_scripts / gen_images / compose_cards / execute 等
