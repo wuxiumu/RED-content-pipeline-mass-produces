@@ -12,12 +12,12 @@ const colColor = c => COL_COLORS[c] || '#8b7bf0';
 // ============ Tab ============
 document.querySelectorAll('.tab').forEach(t => {
   t.addEventListener('click', () => {
+    if (!t.dataset.view) return;
     document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
     document.querySelectorAll('.view').forEach(x => x.classList.remove('active'));
     t.classList.add('active');
     document.getElementById('view-' + t.dataset.view).classList.add('active');
     if (t.dataset.view === 'flow' && !document.getElementById('flow-content').innerHTML) loadFlow();
-    if (t.dataset.view === 'code' && !SCRIPTS.length) loadScripts();
   });
 });
 
@@ -238,6 +238,18 @@ async function loadFlow() {
 }
 
 // ============ 源代码 ============
+let CURRENT_CODE = '';
+
+async function openCodeViewer() {
+  document.getElementById('code-overlay').classList.add('show');
+  if (!SCRIPTS.length) await loadScripts();
+}
+function closeCodeViewer() {
+  document.getElementById('code-overlay').classList.remove('show');
+}
+document.getElementById('code-overlay').addEventListener('click', e => {
+  if (e.target.id === 'code-overlay') closeCodeViewer();
+});
 async function loadScripts() {
   const d = await (await fetch(API + '?action=scripts')).json();
   SCRIPTS = d.scripts || [];
@@ -252,7 +264,27 @@ async function loadScript(name, el) {
   if (el) el.classList.add('active');
   const d = await (await fetch(API + `?action=script&name=${encodeURIComponent(name)}`)).json();
   document.getElementById('code-file').textContent = name + ' · ' + (d.size || 0) + ' bytes';
-  document.getElementById('code-content').textContent = d.content || '';
+  const lines = (d.content || '').split('\n');
+  CURRENT_CODE = lines.join('\n');
+  document.getElementById('code-table').innerHTML = lines.map((l, i) =>
+    `<tr><td>${i + 1}</td><td>${esc(l)}</td></tr>`
+  ).join('');
+  document.getElementById('code-copy-btn').textContent = '复制代码';
+  document.getElementById('code-copy-btn').classList.remove('copied');
+}
+async function copyCode() {
+  const btn = document.getElementById('code-copy-btn');
+  try {
+    await navigator.clipboard.writeText(CURRENT_CODE);
+  } catch {
+    const ta = document.createElement('textarea');
+    ta.value = CURRENT_CODE;
+    document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+  }
+  btn.textContent = '✓ 已复制';
+  btn.classList.add('copied');
+  setTimeout(() => { btn.textContent = '复制代码'; btn.classList.remove('copied'); }, 2000);
 }
 
 // ============ 工具 ============

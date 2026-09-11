@@ -84,7 +84,7 @@
   <div class="tabs-inner">
     <button class="tab active" data-view="posts">待发布成品 <span class="count" id="count-posts">0</span></button>
     <button class="tab" data-view="flow">生产流程</button>
-    <button class="tab" data-view="code">源代码</button>
+    <button class="tab" onclick="openCodeViewer()">源代码</button>
   </div>
 </nav>
 
@@ -108,23 +108,36 @@
     <div class="flow-container" id="flow-content"></div>
   </div>
 
-  <!-- 源代码视图 -->
-  <div class="code-viewer view" id="view-code">
-    <div class="script-list">
-      <h4>流水线脚本</h4>
-      <div id="script-list"></div>
-    </div>
-    <div class="code-display">
-      <div class="file-header" id="code-file">选择左侧文件查看源码</div>
-      <pre id="code-content"></pre>
-    </div>
-  </div>
+  <!-- 源代码视图已改为弹窗，见页面底部 code-overlay -->
 
 </div>
 
 <div class="detail-overlay" id="detail-overlay">
   <div class="detail-modal" id="detail-modal"></div>
 </div>
+
+<!-- 源代码查看弹窗 -->
+<div class="code-overlay" id="code-overlay">
+  <div class="code-modal">
+    <div class="code-modal-header">
+      <span class="code-modal-title">流水线脚本源码</span>
+      <div class="code-modal-actions">
+        <button class="code-copy-btn" id="code-copy-btn" onclick="copyCode()">复制代码</button>
+        <span class="code-close" onclick="closeCodeViewer()">&times;</span>
+      </div>
+    </div>
+    <div class="code-modal-body">
+      <div class="code-sidebar" id="script-list"></div>
+      <div class="code-main">
+        <div class="code-file-bar" id="code-file">选择左侧文件查看源码</div>
+        <div class="code-scroll">
+          <table class="code-table" id="code-table"></table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="toast" id="toast"></div>
 
 <script src="js/app.js"></script>
