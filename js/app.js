@@ -272,16 +272,27 @@ async function loadScript(name, el) {
   document.getElementById('code-copy-btn').textContent = '复制代码';
   document.getElementById('code-copy-btn').classList.remove('copied');
 }
+async function writeClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    try {
+      await Promise.race([
+        navigator.clipboard.writeText(text),
+        new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 800))
+      ]);
+      return;
+    } catch {}
+  }
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.select();
+  try { document.execCommand('copy'); } catch {}
+  document.body.removeChild(ta);
+}
+
 async function copyCode() {
   const btn = document.getElementById('code-copy-btn');
-  try {
-    await navigator.clipboard.writeText(CURRENT_CODE);
-  } catch {
-    const ta = document.createElement('textarea');
-    ta.value = CURRENT_CODE;
-    document.body.appendChild(ta); ta.select();
-    document.execCommand('copy'); document.body.removeChild(ta);
-  }
+  await writeClipboard(CURRENT_CODE);
   btn.textContent = '✓ 已复制';
   btn.classList.add('copied');
   setTimeout(() => { btn.textContent = '复制代码'; btn.classList.remove('copied'); }, 2000);
