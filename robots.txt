@@ -1,4 +1,4 @@
-# robots.txt — 部署后把 flashcards.example.com 替换为真实域名
+# robots.txt — 正式域名已绑定
 User-agent: *
 Allow: /
 # 动态接口仅作前端数据源，不纳入索引，避免参数重复页稀释权重
@@ -15,4 +15,4 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://flashcards.example.com/sitemap.xml
+Sitemap: https://red-content-pipeline-mass-produces.chiguashentan.com/sitemap.xml

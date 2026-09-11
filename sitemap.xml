@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 部署后把 flashcards.example.com 替换为真实域名（与 index.html canonical 保持一致） -->
+<!-- 正式域名已绑定，与 index.html canonical 一致 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://flashcards.example.com/</loc>
+    <loc>https://red-content-pipeline-mass-produces.chiguashentan.com/</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>

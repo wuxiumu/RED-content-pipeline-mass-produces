@@ -9,8 +9,8 @@
 <meta name="author" content="wuxiumu">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
 <meta name="theme-color" content="#ff5c8a">
-<link rel="canonical" href="https://flashcards.example.com/">
-<!-- 部署提示：把 flashcards.example.com 全局替换为你的真实域名（canonical/OG/robots.txt/sitemap.xml） -->
+<link rel="canonical" href="https://red-content-pipeline-mass-produces.chiguashentan.com/">
+<!-- 正式域名已绑定：canonical/OG/robots/sitemap 均指向本子域名 -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%87%3C/text%3E%3C/svg%3E">
 
 <!-- Open Graph / 社交分享卡片 -->
@@ -18,15 +18,15 @@
 <meta property="og:site_name" content="AI蜡笔英语启蒙单词卡工坊">
 <meta property="og:title" content="AI蜡笔英语启蒙单词卡 · 幼儿英语闪卡内容流水线">
 <meta property="og:description" content="AI原创蜡笔风插画+九页小红书闪卡+中英双语台词+亲子互动话术，10大词族100个启蒙单词，一键复制发布。">
-<meta property="og:url" content="https://flashcards.example.com/">
-<meta property="og:image" content="https://flashcards.example.com/api.php?action=image&path=data%2Fimages%2Fwc_004%2Fcards%2F01.png">
+<meta property="og:url" content="https://red-content-pipeline-mass-produces.chiguashentan.com/">
+<meta property="og:image" content="https://red-content-pipeline-mass-produces.chiguashentan.com/api.php?action=image&path=data%2Fimages%2Fwc_004%2Fcards%2F01.png">
 <meta property="og:image:width" content="1080">
 <meta property="og:image:height" content="1440">
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AI蜡笔英语启蒙单词卡 · 幼儿英语闪卡内容流水线">
 <meta name="twitter:description" content="AI原创蜡笔风插画+九页小红书闪卡+中英双语台词，10大词族100词，一键复制发布。">
-<meta name="twitter:image" content="https://flashcards.example.com/api.php?action=image&path=data%2Fimages%2Fwc_004%2Fcards%2F01.png">
+<meta name="twitter:image" content="https://red-content-pipeline-mass-produces.chiguashentan.com/api.php?action=image&path=data%2Fimages%2Fwc_004%2Fcards%2F01.png">
 
 <!-- 结构化数据：供搜索引擎与 AI 问答理解（GEO） -->
 <script type="application/ld+json">
@@ -35,7 +35,7 @@
   "@type": "WebApplication",
   "name": "AI蜡笔英语启蒙单词卡内容工坊",
   "alternateName": "小红书幼儿英语启蒙闪卡流水线",
-  "url": "https://flashcards.example.com/",
+  "url": "https://red-content-pipeline-mass-produces.chiguashentan.com/",
   "description": "面向2-6岁宝宝的AI蜡笔风英语启蒙单词卡生产流水线：10大词族100词，每词产出4张AI原创插画、9页1080×1440小红书闪卡、4句中英双语台词、音标与亲子互动话术及发帖文案，一键复制发布，系统不自动发帖。",
   "applicationCategory": "EducationalApplication",
   "operatingSystem": "Web",
@@ -57,150 +57,7 @@
   "keywords": "英语启蒙,幼儿英语,英语单词卡,英语闪卡,小红书,AI生图,蜡笔风,亲子英语,磨耳朵"
 }
 </script>
-<style>
-:root{
-  --bg:#fffaf5; --card:#fff; --border:#f0e6dc; --text:#4a3f38; --muted:#a08f82;
-  --primary:#ff5c8a; --primary-d:#ef4778; --accent:#8b7bf0; --tag-bg:#fff0e8; --tag-tx:#c05a2e;
-  --code-bg:#2b2733; --code-tx:#e6dff0;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-a{color:var(--accent);text-decoration:none}
-button{font-family:inherit;cursor:pointer;border:none;background:none}
-
-/* Header */
-.header{background:#fff;border-bottom:1px solid var(--border);padding:15px 24px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(255,150,120,.08)}
-.header-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
-.logo{font-size:20px;font-weight:800;display:flex;align-items:center;gap:8px}
-.logo .badge{background:linear-gradient(135deg,#ff8fb1,#b8a6ff);color:#fff;font-size:11px;padding:3px 10px;border-radius:12px;font-weight:600}
-.stats{display:flex;gap:14px;font-size:13px;color:var(--muted);flex-wrap:wrap}
-.stats b{color:var(--text)}
-
-/* Tabs */
-.tabs{display:flex;gap:4px;background:#fff;border-bottom:1px solid var(--border);padding:0 24px;position:sticky;top:69px;z-index:99}
-.tabs-inner{max-width:1400px;margin:0 auto;display:flex;gap:4px;width:100%}
-.tab{padding:13px 20px;font-size:14px;color:var(--muted);border-bottom:3px solid transparent;transition:all .15s}
-.tab:hover{color:var(--text)}
-.tab.active{color:var(--primary);border-bottom-color:var(--primary);font-weight:700}
-.tab .count{background:#f6efe8;padding:1px 8px;border-radius:10px;font-size:11px;margin-left:4px}
-.tab.active .count{background:var(--primary);color:#fff}
-
-.container{max-width:1400px;margin:0 auto;padding:24px}
-.view{display:none}
-.view.active{display:block}
-
-/* Filter bar */
-.filter-bar{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;align-items:center}
-.filter-btn{padding:6px 15px;border-radius:20px;background:#fff;border:1px solid var(--border);font-size:13px;color:var(--muted);transition:all .15s}
-.filter-btn.active{background:var(--text);color:#fff;border-color:var(--text)}
-.search{flex:1;min-width:200px;padding:9px 16px;border:1px solid var(--border);border-radius:20px;font-size:14px;background:#fff}
-.search:focus{outline:2px solid #ffd3e2;border-color:var(--primary)}
-
-/* Grid */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
-.post-card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;cursor:pointer;transition:all .2s}
-.post-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(255,140,170,.18)}
-.post-card .thumb{width:100%;aspect-ratio:3/4;background:#faf3ec;overflow:hidden;position:relative}
-.post-card .thumb img{width:100%;height:100%;object-fit:cover;display:block}
-.post-card .thumb-fallback{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:40px}
-.track-tag{position:absolute;top:10px;left:10px;padding:3px 10px;border-radius:8px;font-size:11px;color:#fff;font-weight:700;box-shadow:0 2px 6px rgba(0,0,0,.12)}
-.status-tag{position:absolute;top:10px;right:10px;padding:3px 9px;border-radius:8px;font-size:10px;font-weight:700;background:rgba(255,255,255,.92);color:var(--primary-d)}
-.post-card .body{padding:13px 14px 15px}
-.post-card .word-row{display:flex;align-items:baseline;gap:8px;margin-bottom:5px}
-.post-card .word-en{font-size:15px;font-weight:800;color:var(--accent);font-family:"Georgia",serif}
-.post-card .word-zh{font-size:12px;color:var(--muted)}
-.post-card .title{font-size:14px;font-weight:600;line-height:1.45;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;min-height:40px}
-.post-card .meta{display:flex;gap:6px;margin-top:9px;font-size:11px;color:var(--muted);flex-wrap:wrap}
-.post-card .meta .chip{background:#faf3ec;padding:2px 8px;border-radius:6px}
-.post-card .meta .chip.tag{background:var(--tag-bg);color:var(--tag-tx)}
-
-/* Detail */
-.detail-overlay{position:fixed;inset:0;background:rgba(74,63,56,.55);z-index:1000;display:none;overflow-y:auto;backdrop-filter:blur(2px)}
-.detail-overlay.show{display:block}
-.detail-modal{max-width:920px;margin:36px auto;background:#fff;border-radius:18px;overflow:hidden}
-.detail-header{padding:22px 26px;border-bottom:1px solid var(--border);position:sticky;top:0;background:#fff;z-index:1;border-radius:18px 18px 0 0}
-.detail-close{float:right;font-size:26px;color:var(--muted);line-height:1;width:36px;height:36px;border-radius:50%}
-.detail-close:hover{background:#f6efe8}
-.detail-title{font-size:21px;font-weight:800;line-height:1.35;margin-right:36px}
-.detail-sub{display:flex;gap:10px;align-items:center;margin-top:8px;font-size:13px;color:var(--muted);flex-wrap:wrap}
-.detail-sub .word-big{font-size:17px;font-weight:800;color:var(--accent);font-family:Georgia,serif}
-.detail-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
-.detail-tags .tag{background:var(--tag-bg);color:var(--tag-tx);padding:3px 11px;border-radius:12px;font-size:12px}
-.detail-body{padding:24px 26px}
-.detail-section{margin-bottom:30px}
-.detail-section h3{font-size:15px;font-weight:700;margin-bottom:13px;padding-bottom:7px;border-bottom:2px solid #f6efe8;display:flex;align-items:center;gap:8px}
-.detail-body-text{white-space:pre-wrap;font-size:14px;line-height:1.85;color:#5c4f45;background:#fdf8f3;border:1px solid var(--border);border-radius:12px;padding:16px 18px}
-.copy-row{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap}
-.copy-btn{padding:8px 16px;border-radius:10px;font-size:13px;font-weight:600;background:var(--primary);color:#fff;transition:all .15s}
-.copy-btn:hover{background:var(--primary-d)}
-.copy-btn.ghost{background:#fff;color:var(--text);border:1px solid var(--border)}
-.copy-btn.ok{background:#46b981}
-
-/* 九页卡 */
-.card-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.card-strip .pg{position:relative;border-radius:10px;overflow:hidden;border:1px solid var(--border);cursor:zoom-in;background:#faf3ec}
-.card-strip .pg img{width:100%;display:block}
-.card-strip .pg .pg-no{position:absolute;bottom:6px;left:6px;background:rgba(0,0,0,.55);color:#fff;font-size:10px;padding:2px 7px;border-radius:6px}
-.raw-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-.raw-grid img{width:100%;border-radius:10px;border:1px solid var(--border);cursor:zoom-in}
-
-/* 单词学习卡 */
-.word-panel{background:linear-gradient(135deg,#fdf2f7,#f1edff);border-radius:14px;padding:18px 20px}
-.word-panel .phonetic{font-size:22px;font-weight:700;color:var(--primary-d);font-family:Georgia,serif;margin:2px 0 4px}
-.line-list{display:flex;flex-direction:column;gap:8px;margin-top:12px}
-.line-item{background:#fff;border-radius:10px;padding:10px 14px;display:flex;gap:12px;align-items:baseline}
-.line-item .idx{color:var(--primary);font-weight:800;font-size:12px;min-width:20px}
-.line-item .en{font-weight:700;font-size:14.5px;font-family:Georgia,serif}
-.line-item .zh{font-size:12.5px;color:var(--muted);margin-left:auto;text-align:right}
-.interact-box{margin-top:12px;background:#fff;border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:11px 15px;font-size:13.5px}
-details.scene-list{margin-top:12px}
-details.scene-list summary{cursor:pointer;font-size:13px;color:var(--accent);font-weight:600}
-details.scene-list ol{margin:10px 0 0 20px;font-size:13px;color:#6b5d52}
-details.scene-list li{margin-bottom:6px;line-height:1.6}
-
-/* Flow */
-.flow-container{background:#fff;border-radius:16px;padding:30px;border:1px solid var(--border)}
-.flow-step{display:grid;grid-template-columns:72px 1fr;gap:22px;padding:18px 0;border-bottom:1px dashed var(--border)}
-.flow-step:last-child{border-bottom:none}
-.flow-num{font-size:38px;font-weight:800;background:linear-gradient(135deg,#ff8fb1,#b8a6ff);-webkit-background-clip:text;background-clip:text;color:transparent;text-align:center;line-height:1.1}
-.flow-step-content h3{font-size:17px;font-weight:700;margin-bottom:5px}
-.flow-step-content .script{font-family:monospace;background:#f6efe8;padding:2px 8px;border-radius:5px;font-size:12px;color:var(--accent)}
-.flow-step-content .meta-row{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin:7px 0}
-.flow-step-content .meta-row b{color:var(--text)}
-.flow-step-content .stats-row{display:flex;gap:10px;margin:9px 0;flex-wrap:wrap}
-.flow-step-content .stat-pill{background:#fdf0f6;color:#b8306a;padding:4px 13px;border-radius:12px;font-size:12px;font-weight:600}
-.flow-step-content .purpose{font-size:13.5px;color:#6b5d52;line-height:1.65}
-.flow-arrow{text-align:center;color:#e0c9b8;font-size:18px;margin:-6px 0}
-.funnel-bar{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
-.funnel-bar .fb{flex:1;min-width:120px;background:linear-gradient(135deg,#fff5f9,#f4efff);border:1px solid var(--border);border-radius:12px;padding:12px 14px;text-align:center}
-.funnel-bar .fb .n{font-size:24px;font-weight:800;color:var(--primary)}
-.funnel-bar .fb .l{font-size:11px;color:var(--muted);margin-top:2px}
-
-/* Code */
-.code-viewer{display:grid;grid-template-columns:250px 1fr;background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--border);min-height:620px}
-.script-list{background:var(--code-bg);color:var(--code-tx);padding:12px 0;overflow-y:auto}
-.script-list h4{color:#a89dbf;font-size:11px;text-transform:uppercase;letter-spacing:.5px;padding:0 16px 8px}
-.script-item{padding:10px 16px;cursor:pointer;font-family:monospace;font-size:12.5px;border-left:3px solid transparent;word-break:break-all}
-.script-item:hover{background:#3a3445}
-.script-item.active{background:#3a3445;border-left-color:var(--primary);color:#fff}
-.script-item .size{font-size:10px;color:#8d82a0;float:right}
-.code-display{background:var(--code-bg);color:var(--code-tx);overflow:auto}
-.code-display pre{margin:0;padding:18px;font-family:"SF Mono",Consolas,monospace;font-size:12.5px;line-height:1.65;white-space:pre;tab-size:4}
-.code-display .file-header{padding:12px 18px;background:#231f29;border-bottom:1px solid #3a3445;font-family:monospace;font-size:12.5px;color:#a89dbf}
-
-.empty{padding:70px 20px;text-align:center;color:var(--muted)}
-.toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(80px);background:#46b981;color:#fff;padding:11px 24px;border-radius:24px;font-size:14px;font-weight:600;z-index:2000;opacity:0;transition:all .3s;box-shadow:0 8px 24px rgba(70,185,129,.35)}
-.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
-
-@media(max-width:768px){
-  .stats{display:none}
-  .tabs-inner{overflow-x:auto}
-  .code-viewer{grid-template-columns:1fr}
-  .script-list{max-height:200px}
-  .card-strip{grid-template-columns:repeat(2,1fr)}
-  .raw-grid{grid-template-columns:repeat(2,1fr)}
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -261,277 +118,7 @@ details.scene-list li{margin-bottom:6px;line-height:1.6}
 </div>
 <div class="toast" id="toast"></div>
 
-<script>
-const API = 'api.php';
-let POSTS = [], SCRIPTS = [], STATS = {}, CURRENT_POST = null;
-
-// 词族配色
-const COL_COLORS = {
-  '水果系列':'#ff9f43','动物系列':'#6bbf59','食物系列':'#f4b942','交通工具系列':'#4ea8e8',
-  '身体部位系列':'#a78bfa','颜色系列':'#ec6aa0','数字系列':'#34bfa3','天气系列':'#5dade2',
-  '家人系列':'#f07892','自然系列':'#7cb342'
-};
-const colColor = c => COL_COLORS[c] || '#8b7bf0';
-
-// ============ Tab ============
-document.querySelectorAll('.tab').forEach(t => {
-  t.addEventListener('click', () => {
-    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
-    document.querySelectorAll('.view').forEach(x => x.classList.remove('active'));
-    t.classList.add('active');
-    document.getElementById('view-' + t.dataset.view).classList.add('active');
-    if (t.dataset.view === 'flow' && !document.getElementById('flow-content').innerHTML) loadFlow();
-    if (t.dataset.view === 'code' && !SCRIPTS.length) loadScripts();
-  });
-});
-
-// ============ 统计 ============
-fetch(API + '?action=stats').then(r => r.json()).then(d => {
-  STATS = d;
-  const by = d.by_collection || {};
-  const f = d.funnel || {};
-  document.getElementById('stats').innerHTML = `
-    <span>成品 <b>${d.total}</b></span>
-    ${Object.entries(by).map(([k,v]) => `<span style="color:${colColor(k)}">${k.replace('系列','')} <b>${v}</b></span>`).join('')}
-    <span>九页卡 <b>${d.total_cards}</b></span>
-    <span>AI原图 <b>${d.total_raws}</b></span>
-    <span style="color:#46b981">台词库 <b>${(f.scripted||0)+(f.images_done||0)+(f.cards_done||0)+(f.ready||0)}</b></span>
-  `;
-  document.getElementById('count-posts').textContent = d.total;
-});
-
-// ============ 列表 ============
-async function loadPosts() {
-  const d = await (await fetch(API + '?action=list')).json();
-  POSTS = d.posts || [];
-  // 动态合集筛选按钮
-  const cols = [...new Set(POSTS.map(p => p.collection).filter(Boolean))];
-  document.getElementById('collection-filters').innerHTML = cols.map(c =>
-    `<button class="filter-btn" data-col="${esc(c)}" style="border-color:${colColor(c)}55;color:${colColor(c)}">${esc(c)}</button>`
-  ).join('');
-  document.querySelectorAll('.filter-btn[data-col]').forEach(b =>
-    b.addEventListener('click', () => {
-      document.querySelectorAll('.filter-btn').forEach(x => x.classList.remove('active'));
-      b.classList.add('active');
-      renderPosts();
-    }));
-  renderPosts();
-}
-
-function renderPosts() {
-  const col = document.querySelector('.filter-btn.active')?.dataset.col || '';
-  const q = document.getElementById('search').value.toLowerCase().trim();
-  const list = POSTS.filter(p => {
-    if (col && p.collection !== col) return false;
-    if (q) {
-      const hay = [p.title, p.word_en, p.word_zh, (p.tags||[]).join(' '), p.collection].join(' ').toLowerCase();
-      if (!hay.includes(q)) return false;
-    }
-    return true;
-  });
-  document.getElementById('post-empty').style.display = list.length ? 'none' : 'block';
-  document.getElementById('post-grid').innerHTML = list.map(p => {
-    const cc = colColor(p.collection);
-    const cover = p.cover_url
-      ? `<img src="${p.cover_url}" loading="lazy" onerror="this.parentNode.innerHTML='<div class=&quot;thumb-fallback&quot;>🍇</div>'">`
-      : `<div class="thumb-fallback">🍇</div>`;
-    return `
-    <div class="post-card" onclick="loadDetail('${p.topic_id}')">
-      <div class="thumb">
-        ${cover}
-        <span class="track-tag" style="background:${cc}">${esc(p.collection || '单词卡')}</span>
-        <span class="status-tag">${p.note_url ? '已发布' : '待发布'}</span>
-      </div>
-      <div class="body">
-        <div class="word-row">
-          <span class="word-en">${esc(p.word_en)}</span>
-          <span class="word-zh">${esc(p.word_zh)}</span>
-        </div>
-        <div class="title">${esc(p.title)}</div>
-        <div class="meta">
-          <span class="chip">📷 ${p.image_count}页</span>
-          <span class="chip">🕐 ${esc(p.post_time_hint || '')}</span>
-          ${(p.tags||[]).slice(0,2).map(t => `<span class="chip tag">${esc(t)}</span>`).join('')}
-        </div>
-      </div>
-    </div>`;
-  }).join('');
-}
-document.getElementById('search').addEventListener('input', renderPosts);
-
-// ============ 详情 ============
-async function loadDetail(id) {
-  const d = await (await fetch(API + `?action=post&id=${encodeURIComponent(id)}`)).json();
-  const p = d.post;
-  if (!p) return;
-  CURRENT_POST = p;
-  const cc = colColor(p.collection);
-  const wd = p.word_detail || null;
-
-  const cards = (p.image_urls || []).map((u, i) => `
-    <div class="pg" onclick="window.open('${u}')">
-      <img src="${u}" loading="lazy"><span class="pg-no">P${i+1}</span>
-    </div>`).join('');
-  const raws = (p.raw_image_urls || []).map((u, i) =>
-    `<img src="${u}" loading="lazy" title="AI 原图 raw_${i+1}" onclick="window.open('${u}')">`).join('');
-
-  const wordPanel = wd ? `
-    <div class="detail-section">
-      <h3>🎓 单词学习内容</h3>
-      <div class="word-panel">
-        <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap">
-          <span style="font-size:26px;font-weight:800;font-family:Georgia,serif;color:#4a3f38">${esc(wd.en)}</span>
-          <span class="phonetic">${esc(wd.phonetic)}</span>
-          <span style="color:var(--muted);font-size:14px">${esc(wd.zh)}${wd.color ? ' · '+esc(wd.color) : ''}</span>
-        </div>
-        <div class="line-list">
-          ${(wd.lines||[]).map((l,i) => `
-            <div class="line-item">
-              <span class="idx">${i+1}</span>
-              <span class="en">${esc(l.en)}</span>
-              <span class="zh">${esc(l.zh)}</span>
-            </div>`).join('')}
-        </div>
-        <div class="interact-box">👩‍👧 <b>亲子互动:</b>${esc(wd.interaction)}</div>
-        <details class="scene-list">
-          <summary>查看 4 条 AI 分镜描述</summary>
-          <ol>${(wd.scenes||[]).map(s => `<li>${esc(s)}</li>`).join('')}</ol>
-        </details>
-      </div>
-    </div>` : '';
-
-  document.getElementById('detail-modal').innerHTML = `
-    <div class="detail-header">
-      <button class="detail-close" onclick="closeDetail()">×</button>
-      <div class="detail-title">${esc(p.title)}</div>
-      <div class="detail-sub">
-        <span class="word-big">${esc(p.word_en)}</span><span>${esc(p.word_zh)}</span>
-        <span class="track-tag" style="position:static;background:${cc}">${esc(p.collection)}</span>
-        <span>🕐 建议 ${esc(p.post_time_hint)}</span>
-        <span>${p.note_url ? '✅ 已发布' : '🟡 待发布（本系统不会自动发帖）'}</span>
-      </div>
-      <div class="detail-tags">${(p.tags||[]).map(t => `<span class="tag">#${esc(t)}</span>`).join('')}</div>
-    </div>
-    <div class="detail-body">
-      <div class="detail-section">
-        <h3>📝 发帖文案</h3>
-        <div class="copy-row">
-          <button class="copy-btn" onclick="copyPost('full', this)">⧉ 复制完整发帖文案（标题+正文+标签）</button>
-          <button class="copy-btn ghost" onclick="copyPost('title', this)">仅复制标题</button>
-          <button class="copy-btn ghost" onclick="copyPost('body', this)">仅复制正文</button>
-        </div>
-        <div class="detail-body-text">${esc(p.body)}</div>
-      </div>
-      <div class="detail-section">
-        <h3>📑 九页成品卡（发布按此顺序上传，共 ${(p.image_urls||[]).length} 张）</h3>
-        <div class="card-strip">${cards}</div>
-      </div>
-      ${wordPanel}
-      ${raws ? `<div class="detail-section">
-        <h3>🎨 AI 无文字原图（4 张，留档/视频轨复用）</h3>
-        <div class="raw-grid">${raws}</div>
-      </div>` : ''}
-    </div>`;
-  document.getElementById('detail-overlay').classList.add('show');
-}
-
-function copyPost(kind, btn) {
-  const p = CURRENT_POST;
-  if (!p) return;
-  const tagLine = (p.tags || []).map(t => '#' + t).join(' ');
-  const text = kind === 'title' ? p.title
-             : kind === 'body'  ? p.body
-             : `${p.title}\n\n${p.body}\n\n${tagLine}`;
-  const done = () => {
-    const old = btn.textContent;
-    btn.textContent = '✓ 已复制，去小红书粘贴即可';
-    btn.classList.add('ok');
-    setTimeout(() => { btn.textContent = old; btn.classList.remove('ok'); }, 1800);
-  };
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(text, done));
-  } else fallbackCopy(text, done);
-}
-function fallbackCopy(text, done) {
-  const ta = document.createElement('textarea');
-  ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
-  document.body.appendChild(ta); ta.select();
-  try { document.execCommand('copy'); done(); } catch(e) { showToast('复制失败，请手动选择文本'); }
-  document.body.removeChild(ta);
-}
-
-function closeDetail(){ document.getElementById('detail-overlay').classList.remove('show'); }
-document.getElementById('detail-overlay').addEventListener('click', e => {
-  if (e.target.id === 'detail-overlay') closeDetail();
-});
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDetail(); });
-
-// ============ 流程 ============
-async function loadFlow() {
-  const d = await (await fetch(API + '?action=flow')).json();
-  const f = (STATS.funnel || {});
-  const funnelHtml = `
-    <div class="funnel-bar">
-      <div class="fb"><div class="n">${f.queued||0}</div><div class="l">排产队列</div></div>
-      <div class="fb"><div class="n">${(f.scripted||0)+(f.images_done||0)+(f.cards_done||0)+(f.ready||0)}</div><div class="l">台词分镜</div></div>
-      <div class="fb"><div class="n">${(f.images_done||0)+(f.cards_done||0)+(f.ready||0)}</div><div class="l">AI 原图出齐</div></div>
-      <div class="fb"><div class="n">${(f.cards_done||0)+(f.ready||0)}</div><div class="l">九页卡排完</div></div>
-      <div class="fb"><div class="n">${f.ready||0}</div><div class="l">待发布成品</div></div>
-    </div>`;
-  document.getElementById('flow-content').innerHTML = (d.steps || []).map((s, i, arr) => `
-    <div class="flow-step">
-      <div class="flow-num">${s.id}</div>
-      <div class="flow-step-content">
-        <h3>${s.name}</h3>
-        <div>脚本 <span class="script">${s.script || ''}</span></div>
-        <div class="meta-row">
-          <span>输入: <b>${s.input || ''}</b></span>
-          <span>输出: <b>${s.output || ''}</b></span>
-        </div>
-        <div class="stats-row">${Object.entries(s.stats || {}).map(([k,v]) =>
-          `<span class="stat-pill">${esc(k)}: ${esc(String(v))}</span>`).join('')}</div>
-        <div class="purpose">${esc(s.purpose || '')}</div>
-      </div>
-    </div>
-    ${i < arr.length - 1 ? '<div class="flow-arrow">↓</div>' : ''}
-  `).join('') + funnelHtml + `
-    <div style="margin-top:22px;padding:15px 18px;background:#fff7e8;border-radius:12px;color:#92600e;font-size:13px;line-height:1.7">
-      <b>🔁 反馈闭环:</b> ${esc(d.feedback_loop || '')}<br>
-      <b>🔒 合规红线:</b> 只发 AI 原创蜡笔形象与自制资源，绝不使用小猪佩奇等第三方 IP；不在正文/图片留微信号或外链；包装为 0-6 岁素质启蒙，避开“课程/培训/教材”词。
-    </div>`;
-}
-
-// ============ 源代码 ============
-async function loadScripts() {
-  const d = await (await fetch(API + '?action=scripts')).json();
-  SCRIPTS = d.scripts || [];
-  document.getElementById('script-list').innerHTML = SCRIPTS.map((s, i) => `
-    <div class="script-item ${i === 0 ? 'active' : ''}" onclick="loadScript('${s.name}', this)">
-      ${s.name}<span class="size">${(s.size/1024).toFixed(1)}K</span>
-    </div>`).join('');
-  if (SCRIPTS[0]) loadScript(SCRIPTS[0].name);
-}
-async function loadScript(name, el) {
-  document.querySelectorAll('.script-item').forEach(x => x.classList.remove('active'));
-  if (el) el.classList.add('active');
-  const d = await (await fetch(API + `?action=script&name=${encodeURIComponent(name)}`)).json();
-  document.getElementById('code-file').textContent = name + ' · ' + (d.size || 0) + ' bytes';
-  document.getElementById('code-content').textContent = d.content || '';
-}
-
-// ============ 工具 ============
-function esc(s) {
-  return String(s ?? '').replace(/[&<>"']/g, c =>
-    ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
-}
-function showToast(msg) {
-  const t = document.getElementById('toast');
-  t.textContent = msg; t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 1800);
-}
-
-loadPosts();
-</script>
+<script src="js/app.js"></script>
 
 <!-- 无脚本降级内容：不执行 JS 的搜索引擎爬虫可抓取完整主题文本（白帽 noscript，不做隐藏堆砌） -->
 <noscript>
