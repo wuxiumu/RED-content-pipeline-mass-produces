@@ -183,6 +183,14 @@ MIT。生成内容请自行遵守各平台规则与当地法律；本仓库不�
 
 ---
 
+---
+
+## 定制合作
+
+面向少儿英语 / 启蒙账号：换成你的**词表、画风、九页卡板式与合规 CTA**。详见 [profiles/swap-subject.md](profiles/swap-subject.md)。
+
+加微信备注「单词卡定制」。
+
 ## 联系方式
 
 定制、演示或合作：
@@ -197,3 +205,4 @@ MIT。生成内容请自行遵守各平台规则与当地法律；本仓库不�
 | 微信赞赏码 | 支付宝收款码 |
 |---|---|
 | ![微信赞赏码](https://chiguashentan-test.oss-cn-beijing.aliyuncs.com/wxprogram/zan/20261002185236_31_227.png) | ![支付宝收款码](https://chiguashentan-test.oss-cn-beijing.aliyuncs.com/wxprogram/zan/20261002185309_32_227.jpg) |
+
