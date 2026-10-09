@@ -11,8 +11,8 @@
 - 样板数据：data/produced.json 含 20 篇 ready 成品；80 张原图与 180 张卡片约 800MB 未入库，运行 gen_images.py 与 compose_cards.py 重生成
 
 - [README](README.md): 完整文档：九页卡结构、快速开始、API、工程细节、FAQ
-- [三智能体总览](00_总览.md): 业务定位与架构
-- [收集/判断/执行设计](01_收集智能体.md): 智能体职责文档（01-03）
+- [三智能体总览](docs/agents/00_总览.md): 业务定位与架构
+- [收集/判断/执行设计](docs/agents/01_收集智能体.md): 智能体职责文档（01-03）
 - [词族词表](assets/wordlists/word_families.yaml): 10 词族 100 单词声明
 - [画风骨架](assets/style/base_style.txt): 蜡笔画风 prompt 模板
 - [只读 API](api.php): 单文件 PHP 后端

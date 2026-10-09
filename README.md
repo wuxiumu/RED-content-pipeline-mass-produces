@@ -22,6 +22,8 @@
 
 ---
 
+设计文档见 [docs/](docs/README.md)。
+
 ## 这是什么（30 秒概览）
 
 - **10 个词族 / 100 个启蒙单词**：水果、动物、食物、交通工具等词族在 [word_families.yaml](assets/wordlists/word_families.yaml) 中声明（milk/bread/corn/cheese 已标不可数名词）
@@ -178,3 +180,20 @@ Python 3.9+ · 智谱 GLM-5.3/Flash + 百炼 qwen3.8-max 兜底 · 阿里云百�
 ## License
 
 MIT。生成内容请自行遵守各平台规则与当地法律；本仓库不含任何第三方平台素材与 IP 形象。
+
+---
+
+## 联系方式
+
+定制、演示或合作：
+
+- 邮箱：[wuxiumu@163.com](mailto:wuxiumu@163.com)
+- 微信：**qingbao199101**（添加请备注来意）
+
+### 赞助支持
+
+如果内容对你有帮助，欢迎自愿赞助。
+
+| 微信赞赏码 | 支付宝收款码 |
+|---|---|
+| ![微信赞赏码](https://chiguashentan-test.oss-cn-beijing.aliyuncs.com/wxprogram/zan/20261002185236_31_227.png) | ![支付宝收款码](https://chiguashentan-test.oss-cn-beijing.aliyuncs.com/wxprogram/zan/20261002185309_32_227.jpg) |
