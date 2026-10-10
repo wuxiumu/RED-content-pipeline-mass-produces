@@ -185,11 +185,31 @@ MIT。生成内容请自行遵守各平台规则与当地法律；本仓库不�
 
 ---
 
+## SEO / GEO 字段预留
+
+> 产品页 / 落地页统一生成时填入；本阶段只预留字段。
+
+| 字段 | 类型 | 用途 |
+|---|---|---|
+| `seo_title` | string | `<title>` / OG title |
+| `seo_description` | string | meta description |
+| `seo_keywords` | string[] | 可选关键词 |
+| `canonical_url` | url | 规范链接 |
+| `og_image` | url | 分享图 |
+| `robots` | string | 如 `index,follow` |
+| `json_ld_type` | string | SoftwareApplication / WebPage / FAQPage |
+| `geo_region` | string | 地域业务时使用 |
+| `geo_placename` | string | 城市/地标 |
+| `geo_position` | string | 可选 lat,long |
+| `hreflang` | map | zh-CN / en |
+| `site_name` | string | 白标品牌名 |
+
+
 ## 定制合作
 
-面向少儿英语 / 启蒙账号：换成你的**词表、画风、九页卡板式与合规 CTA**。详见 [profiles/swap-subject.md](profiles/swap-subject.md)。
+词表/画风/九页板式/合规 CTA 按品牌改版；可与小红书多智能体流水线打包交付。加微信备注「单词卡」。
 
-加微信备注「单词卡定制」。
+---
 
 ## 联系方式
 
