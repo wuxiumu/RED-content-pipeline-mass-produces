@@ -16,3 +16,6 @@ data/images/
 
 # 竞品拆解调研笔记（第三方文章内容，不随公开仓库分发）
 b.md
+.env
+.env.*
+!.env.example

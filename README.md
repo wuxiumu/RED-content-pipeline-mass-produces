@@ -253,3 +253,10 @@ A：内容工厂类项目明确不自动发帖；其它项目以 README「不做
 | 微信赞赏码 | 支付宝收款码 |
 |---|---|
 | ![微信赞赏码](https://chiguashentan-test.oss-cn-beijing.aliyuncs.com/wxprogram/zan/20261002185236_31_227.png) | ![支付宝收款码](https://chiguashentan-test.oss-cn-beijing.aliyuncs.com/wxprogram/zan/20261002185309_32_227.jpg) |
+
+## 冒烟自检
+
+```bash
+bash scripts/smoke.sh
+```
+
